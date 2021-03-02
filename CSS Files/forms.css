@@ -1,0 +1,149 @@
+/* Login */
+.login-page:before {
+  content: "";
+  background: url("../imgs/login.jpe") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.login-page {
+  height: 100vh;
+}
+.form-container {
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  width: 40%;
+  z-index: 1;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  height: 120%;
+}
+.form-control {
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+}
+.form-control .btn {
+  width: 50%;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+.form-labels {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.form-labels input {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form-labels input:focus {
+  outline-color: var(--secondary-color);
+}
+.form-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-links a:hover {
+  color: var(--secondary-color);
+  opacity: 1;
+}
+
+/* Sign Up */
+.sign-up-page:before {
+  content: "";
+  background: var(--primary-color) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.sign-up-page {
+  color: var(--dark-color);
+  height: 100vh;
+}
+.sign-up-page .container {
+  height: 100%;
+}
+.sign-up-page h2 {
+  text-align: center;
+}
+.sign-up-page a {
+  color: var(--dark-color);
+}
+
+.sign-up-page .passwords,
+#free-trial .form-name {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1rem;
+}
+
+/* Free Trial */
+
+#free-trial .form-container {
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  background: var(--dark-color);
+  color: var(--primary-color);
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+#free-trial form {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 2rem;
+  height: auto;
+}
+#free-trial .consent {
+  font-size: 0.8rem;
+}
+/* Trial Details */
+#trial-details {
+  text-align: center;
+  height: 50vh;
+  margin-top: 3rem;
+}
+#trial-details .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  height: 25rem;
+}
+#trial-details .box {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 20px 10px 40px var(--third-color);
+}
+#trial-details h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+#trial-details h3 {
+  font-size: 1.8rem;
+}
+#trial-details i {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}

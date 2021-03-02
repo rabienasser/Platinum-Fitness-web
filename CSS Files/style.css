@@ -1,0 +1,462 @@
+:root {
+  --primary-color: #eaece5;
+  --secondary-color: #b2c2bf;
+  --third-color: #c0ded9;
+  --dark-color: #3b3a30;
+  --max-width: 1300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: var(--primary-color);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
+header {
+  background-color: black;
+}
+
+/* Covid-Info */
+.covid {
+  text-align: center;
+  color: white;
+  background: #2190e1;
+  padding: 0.5rem 0;
+}
+
+/* Member */
+.member {
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+}
+.member ul {
+  display: flex;
+}
+.member li {
+  padding: 10px 20px;
+}
+
+.member li:first-child {
+  background: var(--primary-color);
+}
+
+/* Navigation Bar */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+.main-nav .nav-1 ul,
+.main-nav .nav-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav .nav-1 ul a,
+.main-nav .nav-2 ul a {
+  padding: 20px 30px;
+  font-size: 1.2rem;
+}
+.main-nav .nav-1 ul a:hover,
+.main-nav .nav-2 ul a:hover {
+  border-bottom: 2px solid #c0ded9;
+}
+
+.main-nav .nav-2 li:first-child {
+  background: var(--primary-color);
+  padding: 0.5rem 0;
+}
+.main-nav .nav-2 li:first-child a {
+  color: black;
+}
+/* Showcase */
+.showcase {
+  color: white;
+  height: 85vh;
+  position: relative;
+  padding: 2rem;
+}
+.showcase a {
+  color: white;
+}
+
+.showcase:before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+.head-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+}
+.main-nav,
+.showcase-content {
+  z-index: 1;
+}
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  height: 100%;
+}
+.showcase-content h1 {
+  font-size: 4.5rem;
+}
+.showcase-content h3 {
+  font-size: 1.5rem;
+}
+.showcase-content .btn {
+  align-self: center;
+}
+
+/* Location */
+#location {
+  background: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-self: center;
+  height: 25vh;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 2rem;
+}
+#location p {
+  font-size: 2rem;
+}
+
+#location a[class="hover-dark"] {
+  font-size: 1rem;
+}
+
+/* Home Content */
+
+/* Code #1 */
+
+#code-1 .img-column {
+  display: flex;
+  flex-direction: column;
+}
+#code-1 img {
+  margin-bottom: 1rem;
+}
+
+/* Code #2 */
+
+#code-2 .img-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+#code-2 img:hover {
+  opacity: 0.5;
+}
+/*Code #3 */
+
+#code-3 .img-column {
+  display: flex;
+  flex-direction: column;
+}
+#code-3 img {
+  margin-bottom: 1rem;
+  width: 50%;
+  align-self: center;
+}
+
+/* Footer */
+#main-footer {
+  background: var(--dark-color);
+  color: var(--primary-color);
+  padding: 2rem;
+}
+#main-footer a {
+  color: var(--primary-color);
+}
+#main-footer i {
+  margin-bottom: 60px;
+  margin-right: 10px;
+}
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  text-align: center;
+  grid-gap: 1rem;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+#main-footer .footer-column .list li {
+  text-align: left;
+  padding: 5px 0;
+  border-bottom: 1px dotted var(--third-color);
+}
+
+/* What We Offer */
+
+.offerings-showcase:before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#offerings .activity {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#offerings .activity-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+
+#offerings .activity-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0 3rem;
+}
+#offerings .activity-content h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.bg-dark {
+  background: var(--dark-color);
+  color: var(--primary-color);
+}
+.bg-third {
+  background: var(--third-color);
+}
+
+#offerings .btn {
+  width: 30%;
+  display: block;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+/* Training */
+.training-showcase {
+  height: 70vh;
+  position: relative;
+}
+.training-showcase:before {
+  content: "";
+  background: url("../imgs/Training\ bkg.jpe") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.65;
+}
+.training-showcase .showcase-content h1 {
+  justify-self: end;
+  color: var(--primary-color);
+  letter-spacing: 15px;
+  font-size: 10rem;
+  position: absolute;
+  top: 73.5%;
+  left: 27%;
+}
+/* Training Description */
+#training-description {
+  padding: 40px 0;
+  border-bottom: 9px solid var(--third-color);
+  margin-bottom: 2rem;
+}
+#training-description .container {
+  width: 40%;
+}
+#training-description p {
+  font-size: 1.6rem;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+/* Personal Training */
+
+/* Training Overview */
+#training-overview a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--third-color);
+  border-bottom-width: medium;
+}
+
+/* Personal Training */
+#personal-training,
+#group-training,
+#nutrition {
+  text-align: center;
+}
+
+#group-training {
+  border-bottom: 9px solid var(--third-color);
+}
+
+#training-video a {
+  font-size: 1.1rem;
+}
+#training-video a:hover {
+  color: var(--third-color);
+}
+
+.no-judge {
+  background: var(--third-color);
+  margin-bottom: 0;
+}
+
+/* About */
+.about-showcase {
+  height: 70vh;
+  position: relative;
+}
+.about-showcase:before {
+  content: "";
+  background: url("../imgs-about/about-1.jpe") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.about-showcase .showcase-content h1 {
+  color: var(--primary-color);
+  letter-spacing: 15px;
+  font-size: 9rem;
+  position: absolute;
+  top: 76.5%;
+  left: 13%;
+}
+#about-block,
+#our-people,
+#our-mission {
+  text-align: center;
+}
+
+/* Join */
+#join-steps {
+  margin-bottom: 5rem;
+}
+.join-top {
+  color: var(--primary-color);
+  text-align: center;
+  justify-content: center;
+  font-size: 1.17em;
+  padding: 5px;
+  color: white;
+}
+
+.join-steps-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+#join-steps .join-step * {
+  padding: 0;
+  margin: 0;
+}
+#join-steps .join-step {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+#join-steps .step-1 a {
+  font-weight: bold;
+}
+#join-steps .step-1 a:hover {
+  color: var(--third-color);
+}
+.join-steps-container div:nth-child(odd) {
+  background: #e2e2e2;
+}
+#memberships .container {
+  text-align: center;
+}
+#memberships h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.membership-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+  height: 25rem;
+  margin-bottom: 3rem;
+}
+
+#memberships .box {
+  background: #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  box-shadow: 10px 30px 40px var(--third-color);
+  border-top: 5px solid var(--dark-color);
+}
+#memberships .box a {
+  width: 90%;
+  align-self: center;
+  margin-top: 6rem;
+}
+#memberships .membership-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+  height: 60vh;
+  margin-bottom: 5rem;
+}
+#memberships .box-description {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 0;
+  border-bottom: 7px solid var(--dark-color);
+  background: var(--third-color);
+  box-shadow: 5px 50px 30px var(--dark-color);
+}
