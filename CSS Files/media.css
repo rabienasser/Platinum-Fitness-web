@@ -36,6 +36,9 @@
   }
 }
 
+@media (max-width: 1500px) {
+}
+
 /* Mobile */
 @media (max-width: 500px) {
   .covid {

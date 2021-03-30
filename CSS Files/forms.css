@@ -112,7 +112,7 @@
   display: grid;
   grid-template-columns: 3fr 5fr;
   grid-gap: 2rem;
-  height: auto;
+  height: fit-content;
 }
 #free-trial .consent {
   font-size: 0.8rem;
