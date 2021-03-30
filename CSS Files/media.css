@@ -37,6 +37,10 @@
 }
 
 @media (max-width: 1500px) {
+  .about-showcase .showcase-content h1 {
+    font-size: 2rem !important;
+    letter-spacing: 10px;
+  }
 }
 
 /* Mobile */
