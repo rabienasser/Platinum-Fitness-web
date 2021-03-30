@@ -451,7 +451,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 1rem;
-  height: 60vh;
+  height: fit-content;
   margin-bottom: 5rem;
 }
 #memberships .box-description {

@@ -15,8 +15,8 @@
 .form-container {
   justify-self: center;
   align-self: center;
-  height: 100%;
   width: 40%;
+  height: fit-content;
   z-index: 1;
 }
 .login-form {
@@ -77,10 +77,13 @@
 }
 .sign-up-page {
   color: var(--dark-color);
-  height: 110vh;
+  height: 100vh;
 }
 .sign-up-page .container {
-  height: 100%;
+  height: 130vh;
+}
+.sign-up-page form {
+  height: fit-content;
 }
 .sign-up-page h2 {
   text-align: center;
@@ -97,7 +100,6 @@
 }
 
 /* Free Trial */
-
 #free-trial .form-container {
   display: grid;
   width: 100%;
@@ -114,14 +116,15 @@
   grid-gap: 2rem;
   height: fit-content;
 }
+
 #free-trial .consent {
   font-size: 0.8rem;
 }
 /* Trial Details */
 #trial-details {
   text-align: center;
-  height: 50vh;
-  margin-top: 3rem;
+  height: fit-content;
+  margin-top: 5rem;
 }
 #trial-details .box-container {
   display: grid;
