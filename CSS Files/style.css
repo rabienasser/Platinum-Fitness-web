@@ -138,7 +138,7 @@ header {
   flex-direction: column;
   align-content: center;
   justify-self: center;
-  height: 25vh;
+  height: fit-content;
   text-align: center;
   color: white;
   padding: 20px 0;

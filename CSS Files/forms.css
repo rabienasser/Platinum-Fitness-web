@@ -25,7 +25,7 @@
   justify-content: center;
   align-self: center;
   text-align: center;
-  height: 120%;
+  height: 100%;
 }
 .form-control {
   text-align: center;
@@ -38,7 +38,7 @@
 }
 .form-control .btn {
   width: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   align-self: center;
 }
 .form-labels {
@@ -77,7 +77,7 @@
 }
 .sign-up-page {
   color: var(--dark-color);
-  height: 100vh;
+  height: 110vh;
 }
 .sign-up-page .container {
   height: 100%;
