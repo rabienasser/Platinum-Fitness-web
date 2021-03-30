@@ -295,8 +295,8 @@ header {
   justify-content: flex-end;
 }
 .training-showcase .showcase-content h1 {
-  font-size: 11rem;
-  letter-spacing: 15px;
+  font-size: 9rem;
+  letter-spacing: 10px;
 }
 .training-contain {
   z-index: 1;
@@ -370,8 +370,8 @@ header {
   justify-content: flex-end;
 }
 .about-showcase .showcase-content h1 {
-  font-size: 9rem;
-  letter-spacing: 15px;
+  font-size: 7rem;
+  letter-spacing: 10px;
 }
 #about-block,
 #our-people,
